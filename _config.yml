@@ -2,10 +2,10 @@ permalink: /:title/
 gems:
   - jekyll-sitemap
 
-title: Sebbas.org
+title: sebbas.org
 url: http://sebbas.org
 baseurl: ""
-description: "Sebastián is a programmer, Blender developer, computer graphics researcher, Android developer, swimmer, pull-up lover and sometimes just likes to read."
+description: "Sebastián is a programmer, Blender developer, computer graphics researcher, Android developer, swimmer and pull-up lover"
 author: Sebastián
 twitter: realsebbas
 stackoverflow: 1480784/sebbas
@@ -25,6 +25,7 @@ irc: sebbas
 ircchannel: blendercoders # a channel that you are frequenting
 username: sebbas
 email: sebbas@sebbas.org
+keybase: sebbas
 
 timezone: Europe/Madrid
 google_analytics_tracking_id: UA-39520634-1
