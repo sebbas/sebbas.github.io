@@ -1,0 +1,31 @@
+permalink: /:title/
+gems:
+  - jekyll-sitemap
+
+title: Sebbas.org
+url: http://sebbas.org
+baseurl: ""
+description: "Sebastián is a programmer, Blender developer, computer graphics researcher, Android developer, swimmer and pull-up lover"
+author: Sebastián
+twitter: sebbas
+stackoverflow: 1480784/sebbas
+trello: sebbas
+googleplay: sebbas
+vimeo: sebbas
+linkedin: 
+bitbucket: sebbas
+goodreads: sebbas
+delicious: sebbas
+hackernews: sebbas
+instagram: realsebbas
+medium: sebbas
+youtube: UCiU3oTGKL4GDr5xgK_EMjnQ
+500px: sebbas
+irc: sebbas
+ircchannel: blendercoders # a channel that you are frequenting
+username: sebbas
+email: sebbas@sebbas.org
+keybase: sebbas
+
+timezone: Europe/Madrid
+google_analytics_tracking_id: UA-39520634-1
