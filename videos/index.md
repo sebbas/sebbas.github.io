@@ -1,13 +1,24 @@
 ---
 layout: page
 title: Videos
-updated: 2018-11-22 16:44:18 +0100
+updated: 2018-11-22 23:45:17 +0100
 ---
 
-Here are some early stage tests of Mantaflow in Blender. The full set of videos is available on my <a href="https://www.youtube.com/channel/{{ site.youtube }}">Youtube channel</a>.
+Showcase of some of my videos. More videos are available on my [Youtube channel][youtube] and on [Vimeo][vimeo].
 
+### Fluids
 
 <iframe src="https://www.youtube.com/embed/xtFE0GSptII" width="420" height="315" frameborder="0" allowfullscreen></iframe>
 <iframe src="https://www.youtube.com/embed/GuEVLDNcQws" width="420" height="315" frameborder="0" allowfullscreen></iframe>
 <iframe src="https://www.youtube.com/embed/ZDK7ZWDgBhw" width="420" height="315" frameborder="0" allowfullscreen></iframe>
 <iframe src="https://www.youtube.com/embed/7KQvRxq4YZ4" width="420" height="315" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/SB2xGL2XsGQ" width="420" height="315" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/9HgHFBJOaEc" width="420" height="315" frameborder="0" allowfullscreen></iframe>
+
+### Talks
+
+- [Me in action at Blender conference 2017!][bconf_2017]
+
+[youtube]: https://www.youtube.com/channel/{{ site.youtube }}
+[vimeo]: https://vimeo.com/{{ site.username }}
+[bconf_2017]: https://www.youtube.com/watch?v=h9TViIgm8Yc
