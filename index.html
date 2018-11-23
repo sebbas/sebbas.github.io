@@ -1,12 +1,14 @@
 ---
 layout: default
 title: Home
-updated: 2018-11-22 23:45:16 +0100
+updated: 2018-11-23 16:34:18 +0100
 ---
 
-<img id="teaser_img" src="https://dl.dropboxusercontent.com/s/h589754z3ow8jbp/animated_plume.gif" alt="Blender Mantaflow smoke" height="300" align="top">
+<img id="img" src="https://dl.dropboxusercontent.com/s/h589754z3ow8jbp/animated_plume.gif" alt="Blender Mantaflow smoke" width="400" height="300" align="top">
 
-<p id="teaser_txt" style="visibility:hidden;">Sorry, only simulations on this page. <a href="https://www.youtube.com/watch?v=zQ1_IbFFbzA">Follow Neo</a> for the red pill.</p>
+<canvas id="c" width="400" height="300"></canvas>
+
+<p id="txt" style="visibility:hidden;">Sorry, only simulations on this page. <a href="https://www.youtube.com/watch?v=zQ1_IbFFbzA">Ask Morpheus</a> for the red pill and how to get out of the Matrix.</p>
 
 <p>
   <input type="button" value="Blue pill" onClick="takePill('blue')"/>
@@ -26,16 +28,99 @@ updated: 2018-11-22 23:45:16 +0100
 {% endfor %}
 
 <script>
-function takePill(pillColor) {
-    var img = document.getElementById("teaser_img");
-    var txt = document.getElementById("teaser_txt");
+
+var img = document.getElementById("img");
+var txt = document.getElementById("txt");
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+var timer;
+var imgOpacity = 1.0;
+
+// Redraw canvas every 60ms
+const updateInterval = 60;
+
+// Position canvas on top of image
+c.style.position = "absolute";
+c.style.left = img.offsetLeft + "px";
+c.style.top = img.offsetTop + "px";
+
+function takePill(pillColor)
+{
     if (pillColor === 'blue') {
-        img.style.visibility = "visible";
         txt.style.visibility = "hidden";
+        timer = clearInterval(timer);
+        ctx.clearRect(0, 0, c.width, c.height);
+
+        // Ensure full opacity
+        imgOpacity = 1.0;
+        img.style.opacity = imgOpacity;
     }
     if (pillColor === 'red') {
-        img.style.visibility = "hidden";
         txt.style.visibility = "visible";
+
+        // Only draw matrix once, on first button click
+        if (typeof timer === 'undefined') {
+            timer = setInterval(drawMatrix, updateInterval);
+        }
     }
+}
+
+// Which font (type + size) to use for chars
+const fontSize = 10;
+const fontType = "Times"
+ctx.font = fontSize + "px " + fontType;
+
+// Array of chars to display - and yes, only chars from "Blender Mantaflow" ;)
+const chars = "BLENDRMATFLOW".split("");
+const numColumns = c.width/fontSize;
+
+// Array which indicates current y position in every column
+var colPositions = [];
+
+// Inital position for each char below canvas in order to trigger position reset in loop
+for (var x = 0; x < numColumns; x++) {
+    colPositions[x] = c.height + 1;
+}
+
+// Draw matrix-style characters
+function drawMatrix()
+{
+    // Position canvas on top of image
+    c.style.position = "absolute";
+    c.style.left = img.offsetLeft + "px";
+    c.style.top = img.offsetTop + "px";
+
+    // Clear canvas to white but leave some translucency (fade out effect)
+    ctx.fillStyle = "rgba(255, 255, 255, 0.1)";
+    ctx.fillRect(0, 0, c.width, c.height);
+
+    // Also fade out background image
+    img.style.opacity = imgOpacity;
+
+    // Set new char in every column and increase column position for char from next loop
+    for (var i = 0; i < colPositions.length; i++)
+    {
+        // Get a random char from char array
+        var ch = chars[Math.floor(Math.random() * chars.length)];
+
+        // Let character "stand out", ie. give random chars more translucency
+        var trans = (Math.random() > 0.98) ? 1.0 : 0.4;
+        ctx.fillStyle = "rgba(0, 0, 0, " + trans + ")";
+
+        // Draw this char at position (x=i*fontSize, y=colPositions[i]*fontSize)
+        ctx.fillText(ch, i * fontSize, colPositions[i] * fontSize);
+
+        // Reset column position to 0, ie. at top of canvas
+        if (colPositions[i] * fontSize > c.height && Math.random() > 0.95) {
+            colPositions[i] = 0;
+        }
+
+        // Increase position of char in column by 1
+        colPositions[i]++;
+    }
+
+    // Decrease background image opacity gradually
+    imgOpacity -= 0.05;
+    Math.clamp(imgOpacity, 0.0, 1.0);
 }
 </script>
