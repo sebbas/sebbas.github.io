@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-updated: 2018-11-22 23:45:17 +0100
+updated: 2018-12-03 00:26:12 +0100
 ---
 
 Most of my past projects revolve around smoke and liquid simulations with Blender and Mantaflow.
@@ -21,10 +21,13 @@ Some of the commits from those repositories also belong to a specific project:
   <img src="https://pbs.twimg.com/media/Dkk-aMKX0AEqSpZ.jpg:large" height="300" alt="Blender Mantaflow 2.8"/>
   <video height="300" controls>
     <source src="https://video.twimg.com/ext_tw_video/935951419055726594/pu/vid/1280x720/I-o--e2T_0xXsYBg.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+    Your browser does not support the video tag.
   </video>
 </li>
 </ul>
+
+### Blender conference
+- [2017: Next Generation Fluid Simulations with Mantaflow][bcon17]
 
 ### Google Summer of Code
 - [2017: Blender Mantaflow Integration: Fluid Guiding and Secondary Particle Systems][gsoc_2017]
@@ -50,6 +53,7 @@ Some of the commits from those repositories also belong to a specific project:
 - [2015 and earlier: Various Android applications projects on Github][github]
 
 [blender_git]: https://git.blender.org/gitweb/gitweb.cgi/blender.git/shortlog/refs/heads/fluid-mantaflow
+[bcon17]: https://speakerdeck.com/sebbas/next-generation-fluid-simulations-with-mantaflow
 [fluid_manta]: https://developer.blender.org/diffusion/B/browse/fluid-mantaflow/
 [gsoc_2017]: https://en.blender.org/index.php/User:Sebbas/GSoC_2017
 [gsoc_2016]: https://en.blender.org/index.php/User:Sebbas/GSoC_2016

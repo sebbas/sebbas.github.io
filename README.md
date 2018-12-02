@@ -31,11 +31,11 @@ If you would like to have the `updated` field (used to show the last modificatio
 This blog is all set for use with Github (it's not using any additional Jekyll plugins). So all you have to do is rename your repository to `username.github.io`. Your site will be available at [https://yourusername.github.io][githubio]
 
 [sebbas]: https://sebbas.org
-[jekyll]: https://jekyllrb.com
+[jekyll]: http://jekyllrb.com
 [screenshot]: https://dl.dropboxusercontent.com/s/jbb5nfdas6h400b/screenshot_plain_html_blog.png
 [stallman]:   https://stallman.org
 [graham]: http://www.paulgraham.com/index.html
-[motherfuckingwebsite]: https://motherfuckingwebsite.com
+[motherfuckingwebsite]: http://motherfuckingwebsite.com
 [source-code-blog]: https://github.com/sebbas/plain-html-blog
 [fork]: https://github.com/sebbas/plain-html-blog/fork
 [bundler]: https://bundler.io
@@ -44,4 +44,4 @@ This blog is all set for use with Github (it's not using any additional Jekyll p
 [cname]: https://github.com/sebbas/plain-html-blog/blob/master/CNAME
 [images]: https://github.com/sebbas/plain-html-blog/tree/master/images
 [head]: https://github.com/sebbas/plain-html-blog/blob/master/_includes/head.html
-[githubio]: https://username.github.io
+[githubio]: https://username.github.io 
