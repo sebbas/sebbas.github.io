@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Downloads
-updated: 2018-11-22 23:45:16 +0100
+updated: 2019-04-24 18:16:33 +0200
 ---
 
 Convient download links to some builds of my projects.
@@ -11,6 +11,6 @@ Convient download links to some builds of my projects.
 - [OSX][blender28_osx]
 - [Linux][blender28_linux]
 
-[blender28_win]: https://github.com/sebbas/BlenderMantaflow/releases/download/v2.79b/blender-2.8-887ad92-win64.zip
-[blender28_osx]: https://github.com/sebbas/BlenderMantaflow/releases/download/v2.79b/blender-2.8-887ad92-OSX-10.9-x86_64.zip
-[blender28_linux]: https://github.com/sebbas/BlenderMantaflow/releases/download/v2.79b/blender-2.8-887ad92-linux-glibc224-x86_64.tar.bz2
+[blender28_win]: https://blender.community/5cb507318af5452a29d16879/download/5cb509cd8af5452a29d1687b
+[blender28_osx]: https://blender.community/5cbf2b058af545522bfd155c/download/5cbf316d8af54552b2f4c563
+[blender28_linux]: https://blender.community/5cbf1b288af54551fbbdd85f/download/5cbf1c028af54551fbbdd861
