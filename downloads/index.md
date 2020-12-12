@@ -1,12 +1,10 @@
 ---
 layout: page
 title: Downloads
-updated: 2019-11-19 17:43:07 +0100
+updated: 2020-12-12 17:06:33 +0100
 ---
 
-Convient download links to some builds of my projects.
-
-### Blender Mantaflow 2.81
-- Download builds of the fluid-mantaflow branch from the Blender build-bot: [https://builder.blender.org/download/branches/][blender_branches]
-
+The latest Blender build (with Mantaflow fluids) can be downloaded here: [https://builder.blender.org/download/][blender_nightly]
+ 
 [blender_branches]: https://builder.blender.org/download/branches/
+[blender_nightly]: https://builder.blender.org/download/
