@@ -1,12 +1,12 @@
 ---
 layout: page
 title: About
-updated: 2020-12-12 17:11:46 +0100
+updated: 2020-12-28 21:54:40 +0100
 ---
 
 I'm {{ site.author }}, the developer behind Blender's Mantaflow fluid solver.
 
-<img src="https://unavatar.now.sh/twitter/{{ site.username }}" alt="{{ site.author }}" width="200" align="top" border="0" />
+<img src="https://dl.dropboxusercontent.com/s/aozc1kylygtxjbc/profile_sebbas_01.jpg" alt="{{ site.author }}" width="200" align="top" border="0" />
 
 You can reach me via &hellip;
 
