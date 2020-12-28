@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-updated: 2020-12-12 16:58:04 +0100
+updated: 2020-12-28 13:35:58 +0100
 ---
 
 Where my code goes to &hellip;
@@ -12,7 +12,7 @@ Where my code goes to &hellip;
 Some results from those commits, grouped by project and time:
 
 ### Blender Institute
-- [2020: OpenVDB, APIC & more][blender_2020]
+- [2020: OpenVDB, APIC, Coiling & buckling viscous liquids & more][blender_2020]
 
 <ul style="list-style-type:none">
 <li>
@@ -25,7 +25,15 @@ Some results from those commits, grouped by project and time:
     Your browser does not support the video tag.
   </video>
   <video height="300" controls autoplay>
+    <source src="https://dl.dropboxusercontent.com/s/x3q6qg7f4eqq68o/coiling_viscosity.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video height="300" controls autoplay>
     <source src="https://dl.dropboxusercontent.com/s/tm4hqcszlu6rmo3/mantaflow_mls_mpm_test_01.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video height="300" controls autoplay>
+    <source src="https://dl.dropboxusercontent.com/s/6ekduz4m1eol1hb/Beach_291.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </li>
