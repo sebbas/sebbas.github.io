@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-updated: 2020-12-28 13:35:58 +0100
+updated: 2020-12-29 15:35:30 +0100
 ---
 
 Where my code goes to &hellip;
@@ -16,23 +16,23 @@ Some results from those commits, grouped by project and time:
 
 <ul style="list-style-type:none">
 <li>
-  <video height="300" controls autoplay>
+  <video height="300" controls autoplay loop>
     <source src="https://dl.dropboxusercontent.com/s/44jdkscrx544u28/flip_0001-0250.mp4?dl=0" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <video height="300" controls autoplay>
+  <video height="300" controls autoplay loop>
     <source src="https://dl.dropboxusercontent.com/s/wqzol7vsseuuixm/apic_0001-0250.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <video height="300" controls autoplay>
+  <video height="300" controls autoplay loop>
     <source src="https://dl.dropboxusercontent.com/s/x3q6qg7f4eqq68o/coiling_viscosity.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <video height="300" controls autoplay>
+  <video height="300" controls autoplay loop>
     <source src="https://dl.dropboxusercontent.com/s/tm4hqcszlu6rmo3/mantaflow_mls_mpm_test_01.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <video height="300" controls autoplay>
+  <video height="300" controls autoplay loop>
     <source src="https://dl.dropboxusercontent.com/s/6ekduz4m1eol1hb/Beach_291.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -55,7 +55,7 @@ Some results from those commits, grouped by project and time:
 <ul style="list-style-type:none">
 <li>
   <img src="https://dl.dropboxusercontent.com/s/hfz42duyetxm29u/blender_28_integration.png" height="300" alt="Blender Mantaflow 2.8"/>
-  <video height="300" controls autoplay>
+  <video height="300" controls autoplay loop>
     <source src="https://dl.dropboxusercontent.com/s/pj3dbjoiiwdfz9n/manta_viscous_honey_0001-0090.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -81,7 +81,7 @@ Some results from those commits, grouped by project and time:
   <img src="https://dl.dropboxusercontent.com/s/q03qqz6brfjau2z/Mantaflow_liquid_mesh_particle_overlay.png" height="300" alt="Blender Mantaflow GSoC 2017 Splash"/>
   <img src="https://dl.dropboxusercontent.com/s/fmslbeabj18xop1/Mantaflow_sndpart_demo2.gif" height="300" alt="Blender Mantaflow GSoC 2017 Particles"/>
   <img src="https://dl.dropboxusercontent.com/s/cj4qzvukuye8g9z/Mantaflow_guiding_test_one.gif" height="300" alt="Blender Mantaflow GSoC 2017 Tornado"/>
-  <video height="300" controls autoplay>
+  <video height="300" controls autoplay loop>
     <source src="https://dl.dropboxusercontent.com/s/cflbel2yqnju07j/splash_particles_demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
