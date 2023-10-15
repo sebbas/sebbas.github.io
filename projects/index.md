@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-updated: 2020-12-29 15:35:30 +0100
+updated: 2023-10-14 20:17:45 -0700
 ---
 
 Where my code goes to &hellip;
@@ -9,7 +9,24 @@ Where my code goes to &hellip;
 - Fluid Simulations: [Mantaflow Git repository][manta_git]
 - Personal: [Github][github]
 
-Some results from those commits, grouped by project and time:
+### University of California, Irvine:
+
+- [2023: Neural Operators for the Variable Coefficient Poisson Equation][poisson-ddm]
+
+<ul style="list-style-type:none">
+<li>
+  <video height="200" controls autoplay loop>
+    <source src="https://dl.dropboxusercontent.com/scl/fi/i87qh33nefhb6jtdgz61c/train.mp4?rlkey=bcuo48b52tealfmsk7eei9p6t&dl=0" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<video height="200" controls autoplay loop>
+    <source src="https://dl.dropboxusercontent.com/scl/fi/78xsurzyzxag6hgn6jczh/pred.mp4?rlkey=0ignmt469l8z7qozz4fmdbnye&dl=0" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</li>
+</ul>
+
+- [2022: Bubble2vel: Learning boiling dynamics and recovering hidden physics in two-phase flows ][bubble2vel]
 
 ### Blender Institute
 - [2020: OpenVDB, APIC, Coiling & buckling viscous liquids & more][blender_2020]
@@ -111,6 +128,8 @@ Some results from those commits, grouped by project and time:
 ### Android
 - [2015 and earlier: Various Android applications projects on Github][github]
 
+[poisson-ddm]: https://github.com/sebbas/poisson-ddm
+[bubble2vel]: https://github.com/sebbas/bubble2vel
 [blender_2020]: https://wiki.blender.org/wiki/User:Sebbas/Reports/2020
 [blender_2019]: https://wiki.blender.org/wiki/User:Sebbas/Reports/2019
 [blender_git_master]: https://git.blender.org/gitweb/gitweb.cgi/blender.git/shortlog/refs/heads/master

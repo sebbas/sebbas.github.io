@@ -1,23 +1,36 @@
 ---
 layout: page
 title: About
-updated: 2020-12-28 21:54:40 +0100
+updated: 2023-10-14 20:17:45 -0700
 ---
 
-I'm {{ site.author }}, the developer behind Blender's Mantaflow fluid solver.
+I'm {{ site.author }}, the developer behind Blender's Mantaflow fluid solver. Currently living in Irvine, CA.
 
-<img src="https://dl.dropboxusercontent.com/s/aozc1kylygtxjbc/profile_sebbas_01.jpg" alt="{{ site.author }}" width="200" align="top" border="0" />
+<ul style="list-style-type:none">
+<li>
+  <a href="{{ site.profile_photo_1 }}" target="_blank" style="text-decoration: none">
+    <img src="{{ site.profile_photo_1 }}" alt="{{ site.author }} 2012" style="height: 10rem">
+  </a>
+  <a href="{{ site.profile_photo_2 }}" target="_blank" style="text-decoration: none">
+    <img src="{{ site.profile_photo_2 }}" alt="{{ site.author }} 2022" style="height: 10rem">
+  </a>
+</li>
+<li>
+  <p>Left: 2012; Right: 2022</p>
+</li>
+</ul>
 
 You can reach me via &hellip;
 
 - Email: [{{ site.email }}][email]
-- Twitter: [@{{ site.username }}][twitter]
-- Blender Chat: [#blender-coders][bchat] - look for <i>{{ site.username }}
+- ~~Twitter~~ 𝕏.com: [@{{ site.username }}][x]
+- Blender Developers:  [@{{ site.username }}][blender]
 - Keybase: [@{{ site.username }}][keybase]
-- IRC: [#blendercoders][irc]
+- Unsplash: [@{{ site.username }}][unsplash]
+
 
 [email]: mailto:{{ site.email }}
-[twitter]: https://twitter.com/{{ site.username }}
-[bchat]: https://blender.chat/channel/blender-coders
+[x]: https://x.com/{{ site.username }}
+[unsplash]: https://unsplash.com/@{{ site.username }}
+[blender]: https://projects.blender.org//{{ site.username }}
 [keybase]: https://keybase.io/{{ site.username }}
-[irc]: irc://chat.freenode.net/{{ site.ircchannel }}

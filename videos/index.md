@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Videos
-updated: 2021-01-02 13:47:35 +0100
+updated: 2023-10-14 20:17:45 -0700
 ---
 
-Showcase of some of my fluids tests. More videos are available on my [Youtube channel][youtube] and on [Vimeo][vimeo].
+Collection of fluid simulation tests. More videos available on [Youtube][youtube] and [Vimeo][vimeo].
 
 ### Liquids
 
@@ -21,7 +21,7 @@ Showcase of some of my fluids tests. More videos are available on my [Youtube ch
 
 ### Talks
 
-- [Me in action at Blender conference 2017!][bconf_2017]
+- [Blender conference 2017][bconf_2017]
 
 [youtube]: https://www.youtube.com/channel/{{ site.youtube }}
 [vimeo]: https://vimeo.com/{{ site.username }}
