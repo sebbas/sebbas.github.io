@@ -1,13 +1,30 @@
 ---
 layout: page
 title: Projects
-updated: 2023-10-14 20:17:45 -0700
+updated: 2024-04-12 12:59:42 -0700
 ---
 
 Where my code goes to &hellip;
 - Blender Code: [Blender Git repository][blender_git_master]
 - Fluid Simulations: [Mantaflow Git repository][manta_git]
 - Personal: [Github][github]
+
+### Mantaflow Plugins
+
+- [2024: Material-Point-Method Solver][mlsmpm_plugin]
+
+<ul style="list-style-type:none">
+<li>
+  <video height="300" controls autoplay loop>
+    <source src="https://dl.dropboxusercontent.com/scl/fi/c4ph3ilwa4odnxiuxcocr/mpm_01.mp4?rlkey=31sfaofu53o2asy8kqtkw1zf0&dl=0" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<video height="300" controls autoplay loop>
+    <source src="https://dl.dropboxusercontent.com/scl/fi/rawx9tgrg4rk5cn2r0r5i/mpm_02.mp4?rlkey=otnppodbyphdwvjwwqxmylu5d&dl=0" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</li>
+</ul>
 
 ### University of California, Irvine:
 
@@ -128,6 +145,7 @@ Where my code goes to &hellip;
 ### Android
 - [2015 and earlier: Various Android applications projects on Github][github]
 
+[mlsmpm_plugin]: https://github.com/sebbas/mantaflow/tree/mlsmpm_plugin
 [poisson-ddm]: https://github.com/sebbas/poisson-ddm
 [bubble2vel]: https://github.com/sebbas/bubble2vel
 [blender_2020]: https://wiki.blender.org/wiki/User:Sebbas/Reports/2020
