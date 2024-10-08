@@ -4,16 +4,9 @@ title: Home
 updated: 2018-11-23 16:34:18 +0100
 ---
 
-<img id="img" src="https://dl.dropboxusercontent.com/s/h589754z3ow8jbp/animated_plume.gif" alt="Blender Mantaflow smoke" width="400" height="300" align="top">
-
-<canvas id="c" width="400" height="300"></canvas>
-
-<p id="txt" style="visibility:hidden;">Sorry, only simulations on this page. <a href="https://www.youtube.com/watch?v=zQ1_IbFFbzA">Ask Morpheus</a> for the red pill and how to get out of the Matrix.</p>
-
-<p>
-  <input type="button" value="Blue pill" onClick="takePill('blue')"/>
-  <input type="button" value="Red pill" onClick="takePill('red')"/>
-</p>
+<img id="img" src="https://dl.dropboxusercontent.com/s/h589754z3ow8jbp/animated_plume.gif" width="400" height="300" align="top">
+<canvas id="c" width="400" height="300" onclick="toggleCanvas()" style="cursor: pointer;"></canvas>
+<p id="txt">Smoke Plume with Wavelet Turbulence. Simulated with Mantaflow, rendered in Cycles (2016).</p>
 
 {% for category in site.categories %}
   {% assign cat = category | first %}
@@ -35,6 +28,8 @@ var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 var timer;
 var imgOpacity = 1.0;
+var clickCnt = 0;
+var clickThresh = 7;
 
 // Redraw canvas every 60ms
 const updateInterval = 60;
@@ -44,20 +39,33 @@ c.style.position = "absolute";
 c.style.left = img.offsetLeft + "px";
 c.style.top = img.offsetTop + "px";
 
-function takePill(pillColor)
+function toggleCanvas()
 {
-    if (pillColor === 'blue') {
-        txt.style.visibility = "hidden";
+    clickCnt += 1;
+
+    // Update text
+    if (clickCnt == clickThresh) {
+        txt.textContent = "You found the 'Matrix' easter egg! Enjoy the simulations on this site!";
+    }
+    else if (clickCnt > clickThresh-4) {
+        const clicksAway = clickThresh - clickCnt;
+        const clickStr = clicksAway == 1 ? " click" : " clicks";
+        txt.textContent = "You're " + clicksAway + clickStr + " away from unlocking the easter egg!"
+    }
+    else {
+        txt.textContent = "Smoke Plume with Wavelet Turbulence. Simulated with Mantaflow, rendered in Cycles (2016).";
+    }
+
+    // Update main image and matrix canvas
+    if (clickCnt < clickThresh) {
         timer = clearInterval(timer);
         ctx.clearRect(0, 0, c.width, c.height);
-
         // Ensure full opacity
         imgOpacity = 1.0;
         img.style.opacity = imgOpacity;
     }
-    if (pillColor === 'red') {
-        txt.style.visibility = "visible";
-
+    else {
+        clickCnt = 0;
         // Only draw matrix once, on first button click
         if (typeof timer === 'undefined') {
             timer = setInterval(drawMatrix, updateInterval);
@@ -121,6 +129,6 @@ function drawMatrix()
 
     // Decrease background image opacity gradually
     imgOpacity -= 0.05;
-    Math.clamp(imgOpacity, 0.0, 1.0);
+    Math.max(0.0, Math.min(1.0, imgOpacity));
 }
 </script>
