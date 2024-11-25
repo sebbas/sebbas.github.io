@@ -1,22 +1,16 @@
 ---
 layout: page
 title: About
-updated: 2023-10-14 20:17:45 -0700
+updated: 2024-11-25 12:33:28 -0800
 ---
 
-I'm {{ site.author }}, the developer behind Blender's Mantaflow fluid solver. Currently living in Irvine, CA.
+I'm {{ site.author }}, the developer behind Blender's Mantaflow fluid solver.
 
 <ul style="list-style-type:none">
 <li>
-  <a href="{{ site.profile_photo_1 }}" target="_blank" style="text-decoration: none">
-    <img src="{{ site.profile_photo_1 }}" alt="{{ site.author }} 2012" style="height: 10rem">
+   <a href="{{ site.profile_photo_3 }}" target="_blank" style="text-decoration: none">
+    <img src="{{ site.profile_photo_3 }}" alt="{{ site.author }} 2024" style="height: 10rem">
   </a>
-  <a href="{{ site.profile_photo_2 }}" target="_blank" style="text-decoration: none">
-    <img src="{{ site.profile_photo_2 }}" alt="{{ site.author }} 2022" style="height: 10rem">
-  </a>
-</li>
-<li>
-  <p>Left: 2012; Right: 2022</p>
 </li>
 </ul>
 
