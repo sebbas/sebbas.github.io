@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-updated: 2024-05-01 09:56:41 -0700
+updated: 2025-06-27 14:19:32 -0700
 ---
 
 Where my code goes to &hellip;
@@ -9,9 +9,19 @@ Where my code goes to &hellip;
 - Fluid Simulations: [Mantaflow Git repository][manta_git]
 - Personal: [Github][github]
 
-### Mantaflow Plugins
+### Mantaflow Fluid simulation Development
 
-- [2024: Material-Point-Method Solver][mlsmpm_plugin]
+- [2025: Metal GPU solver (Apple) and MPM kernel development][mlsmpm_plugin]
+<ul style="list-style-type:none">
+<li>
+  <video height="300" controls autoplay loop>
+    <source src="https://dl.dropboxusercontent.com/scl/fi/evv0uusgdzvop9ib9ah4n/mpm_0001-0270_960x540.mp4?rlkey=hf4ogip46aov75ivkwjtlhili&st=ut4ic4uk&dl=0" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</li>
+</ul>
+
+- [2024: (MLS) Material-Point-Method Solver][mlsmpm_plugin]
 
 <ul style="list-style-type:none">
 <li>
