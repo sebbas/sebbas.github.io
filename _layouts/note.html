@@ -1,0 +1,79 @@
+---
+layout: default
+---
+<article>
+
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  {{ content }}
+
+  {% assign cat = page.categories.first %}
+
+  {% if cat %}
+    {% assign category_posts = site.notes | where_exp: "note", "note.categories contains cat" | where_exp: "note", "note.draft != true" | sort: "title" %}
+
+    {% assign current_index = nil %}
+
+    {% for post in category_posts %}
+      {% if post.url == page.url %}
+        {% assign current_index = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if current_index != nil %}
+      {% assign prev_index = current_index | minus: 1 %}
+      {% assign next_index = current_index | plus: 1 %}
+
+      {% assign prev_post = nil %}
+      {% assign next_post = nil %}
+
+      {% for post in category_posts %}
+        {% if forloop.index0 == prev_index %}
+          {% assign prev_post = post %}
+        {% endif %}
+
+        {% if forloop.index0 == next_index %}
+          {% assign next_post = post %}
+        {% endif %}
+      {% endfor %}
+
+      {% if prev_post or next_post %}
+        <table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td>
+                {% if prev_post %}
+                  <b>Previous</b>
+                {% endif %}
+              </td>
+              <td align="right">
+                {% if next_post %}
+                  <b>Next</b>
+                {% endif %}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {% if prev_post %}
+                  <a href="{{ prev_post.url | relative_url }}">
+                    {{ prev_post.title | strip_html | truncate: 30 }}
+                  </a>
+                {% endif %}
+              </td>
+              <td align="right">
+                {% if next_post %}
+                  <a href="{{ next_post.url | relative_url }}">
+                    {{ next_post.title | strip_html | truncate: 30 }}
+                  </a>
+                {% endif %}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+
+</article>
